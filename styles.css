@@ -255,10 +255,13 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: relative;
   overflow: hidden;
   color: #fff;
+  /* Banner photo with a left-weighted dark scrim so the white headline stays readable */
   background-image:
-    radial-gradient(circle at 20% 30%, rgba(184, 102, 112, 0.18), transparent 55%),
-    radial-gradient(circle at 80% 70%, rgba(21, 25, 26, 0.4), transparent 50%),
-    linear-gradient(135deg, #0A0B0B 0%, #15191A 60%, #3D1F23 100%);
+    linear-gradient(90deg, rgba(10, 11, 11, 0.92) 0%, rgba(13, 15, 16, 0.78) 42%, rgba(61, 31, 35, 0.48) 100%),
+    url('assets/images/banner1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-inner {
   padding: 96px 0;
@@ -876,11 +879,12 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   align-items: center;
   justify-content: center;
 }
-.coverage-map svg.map-bg {
+.coverage-map .map-bg {
   width: 100%;
   max-width: 600px;
   height: auto;
-  opacity: 0.85;
+  display: block;
+  border-radius: var(--radius-md);
 }
 .coverage-states {
   margin-top: 16px;
@@ -1369,3 +1373,47 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   html { scroll-behavior: auto; }
   .showcase-item:hover img { transform: none; }
 }
+
+/* ============================================
+   LOCATION DETAIL PAGES
+   ============================================ */
+.loc-layout { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 1024px) { .loc-layout { grid-template-columns: 248px 1fr; gap: 48px; align-items: start; } }
+.loc-side .loc-side-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--brand-600); margin-bottom: 12px; }
+.loc-side ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.loc-side a { display: block; padding: 12px 16px; border-radius: var(--radius-md); font-weight: 600; color: var(--ink-700); border: 1px solid var(--ink-100); transition: background var(--transition), color var(--transition), border-color var(--transition); }
+.loc-side a:hover { background: var(--ink-50); color: var(--brand-700); border-color: var(--ink-200); }
+.loc-side a.active { background: var(--brand-600); color: #fff; border-color: var(--brand-600); }
+@media (min-width: 1024px) { .loc-side { position: sticky; top: 96px; } }
+
+.loc-card { background: #fff; border: 1px solid var(--ink-200); border-radius: var(--radius-xl); padding: 32px; }
+@media (min-width: 768px) { .loc-card { padding: 40px; } }
+.loc-card + .loc-card { margin-top: 24px; }
+.loc-card h2 { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink-900); }
+.loc-card .loc-sub { font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--brand-600); margin-bottom: 6px; }
+
+.loc-map { position: relative; width: 100%; padding-bottom: 60%; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--ink-200); }
+.loc-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.loc-team { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 640px) { .loc-team { grid-template-columns: repeat(2, 1fr); } }
+.loc-person { padding: 20px; border: 1px solid var(--ink-200); border-radius: var(--radius-lg); background: var(--ink-50); }
+.loc-person .name { font-weight: 700; color: var(--ink-900); font-size: 18px; }
+.loc-person .role { font-size: 13px; color: var(--ink-500); margin-top: 2px; }
+
+/* --- Contact form extras (checkbox groups, consent, required mark) --- */
+.field label .req, .field-label .req { color: #c0392b; margin-left: 2px; }
+.field-group { margin-top: 24px; }
+.field-label { font-size: 13px; font-weight: 600; color: var(--ink-700); display: block; margin-bottom: 10px; }
+.check-grid { display: grid; grid-template-columns: 1fr; gap: 10px 20px; }
+@media (min-width: 640px) {
+  .check-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .check-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+.check-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--ink-700); cursor: pointer; }
+.check-item input { width: auto; flex: none; margin-top: 3px; accent-color: var(--brand-600); }
+.field input[type="checkbox"], .field input[type="radio"] { width: auto; }
+.field input[type="file"] { padding: 10px 12px; cursor: pointer; }
+.privacy-row { display: flex; align-items: flex-start; gap: 10px; margin-top: 24px; font-size: 13px; line-height: 1.6; color: var(--ink-600); }
+.privacy-row input { width: auto; flex: none; margin-top: 3px; accent-color: var(--brand-600); }
+.privacy-row a { color: var(--brand-600); text-decoration: underline; }

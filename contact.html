@@ -22,7 +22,7 @@
       </a>
       <span class="location-info">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-        5 service centers · PA, NY, NJ, DE
+        5 service centers · PA, NY, NJ
       </span>
     </div>
     <div class="util-right">
@@ -70,38 +70,107 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
+<section id="contact" class="section">
   <div class="container">
-    <div class="contact-card">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="contact-grid">
-        <div>
-          <h2>How can we help?</h2>
-          <p class="lead">Tell us what you need and the best way to reach you. For a generator that's down right now, call &mdash; we dispatch around the clock.</p>
-          <a href="tel:18777367697" class="contact-phone">
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.792a2 2 0 01-.55 1.946L8.21 10.71a11.05 11.05 0 005.08 5.08l1.457-1.16a2 2 0 011.946-.55l2.792.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-            1-877-PEN-POWR
-          </a>
-        </div>
-        <form class="contact-form" onsubmit="ppsSubmit(event)">
-          <input placeholder="Your name" required />
-          <input placeholder="Company" />
-          <input placeholder="Email or phone" required />
-          <select>
-            <option>What do you need?</option>
-            <option>Emergency service</option>
-            <option>Generator rental</option>
-            <option>New install quote</option>
-            <option>Maintenance plan</option>
-            <option>Parts</option>
-            <option>Billing / credit</option>
-            <option>Other</option>
-          </select>
-          <button type="submit">Send request</button>
-        </form>
-      </div>
+    <div class="section-intro" style="max-width:760px;">
+      <p class="section-lead">Thank you for considering Penn Power Systems for your power needs. Our factory- and industry-trained field technicians have deep experience across the mechanical and electrical facets of on-site power systems. We offer 24/7 parts and service support, a fleet of fully equipped service vehicles, and custom Planned Maintenance Programs to keep your equipment at optimal factory performance.</p>
+      <p class="section-lead">Have a question or want a quote? Fill out the form below and a member of our team will be in touch shortly. For a generator that's down right now, call <a href="tel:18777367697" class="text-link" style="display:inline;">1-877-PEN-POWR</a> &mdash; we dispatch around the clock.</p>
     </div>
+
+    <form class="form-card" onsubmit="ppsSubmit(event)">
+      <div class="form-legend">Your information</div>
+      <div class="form-row two">
+        <div class="field"><label for="cu-first">First name <span class="req">*</span></label><input id="cu-first" name="firstName" placeholder="First name" required /></div>
+        <div class="field"><label for="cu-last">Last name <span class="req">*</span></label><input id="cu-last" name="lastName" placeholder="Last name" required /></div>
+      </div>
+      <div class="form-row two">
+        <div class="field"><label for="cu-email">Email address <span class="req">*</span></label><input id="cu-email" name="email" type="email" placeholder="Enter email" required /></div>
+        <div class="field"><label for="cu-phone">Phone number <span class="req">*</span></label><input id="cu-phone" name="phone" type="tel" placeholder="XXX-XXX-XXXX" required /></div>
+      </div>
+      <div class="form-row two">
+        <div class="field"><label for="cu-company">Company name</label><input id="cu-company" name="company" placeholder="Company name" /></div>
+        <div class="field"><label for="cu-title">Job title <span class="req">*</span></label><input id="cu-title" name="jobTitle" placeholder="Job title" required /></div>
+      </div>
+      <div class="field"><label for="cu-fax">Fax number</label><input id="cu-fax" name="fax" type="tel" placeholder="XXX-XXX-XXXX" /></div>
+
+      <div class="form-legend">Address</div>
+      <div class="field"><label for="cu-addr1">Address</label><input id="cu-addr1" name="addressLine1" placeholder="Address 1" /></div>
+      <div class="field"><input id="cu-addr2" name="addressLine2" placeholder="Address 2 (optional)" aria-label="Address line 2" /></div>
+      <div class="form-row two">
+        <div class="field"><label for="cu-city">City</label><input id="cu-city" name="city" placeholder="Enter city" /></div>
+        <div class="field">
+          <label for="cu-state">State <span class="req">*</span></label>
+          <select id="cu-state" name="state" required>
+            <option value="">Choose state</option>
+            <option>Pennsylvania</option><option>New York</option><option>New Jersey</option>
+            <option disabled>──────────</option>
+            <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Mexico</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row two">
+        <div class="field">
+          <label for="cu-country">Country</label>
+          <select id="cu-country" name="country">
+            <option selected>USA</option><option>Canada</option><option>Mexico</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label for="cu-zip">Zip code</label><input id="cu-zip" name="zip" placeholder="Enter zip" /></div>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">How can we help you? <span class="req">*</span></span>
+        <div class="check-grid cols-2">
+          <label class="check-item"><input type="checkbox" name="reason" value="Additional Service" /> Additional Service</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Emergency Service" /> Emergency Service</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Fire Pump Maintenance" /> Fire Pump Maintenance</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Fuel Polishing" /> Fuel Polishing</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Generator Service" /> Generator Service</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Loadbank Testing" /> Loadbank Testing</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Oil-Coolant Sampling" /> Oil-Coolant Sampling</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Parts" /> Parts</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Preventative Maintenance" /> Preventative Maintenance</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Remote Monitoring" /> Remote Monitoring</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Rental Generators" /> Rental Generators</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Service Centers" /> Service Centers</label>
+          <label class="check-item"><input type="checkbox" name="reason" value="Other" /> Other</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="cu-loc">Service location <span class="req">*</span></label>
+        <select id="cu-loc" name="serviceLocation" required>
+          <option value="">Choose service location</option>
+          <option>Buffalo, NY</option>
+          <option>Cranberry/Pittsburgh, PA</option>
+          <option>Fleetwood, PA</option>
+          <option>Philadelphia, PA</option>
+          <option>Syracuse, NY</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field"><label for="cu-comments">Additional details</label><textarea id="cu-comments" name="comments" maxlength="3000" placeholder="Add additional details here"></textarea></div>
+
+      <div class="field"><label for="cu-file">Please upload any related files</label><input id="cu-file" name="relatedFiles" type="file" /></div>
+
+      <div class="field-group">
+        <span class="field-label">How would you like us to contact you?</span>
+        <div class="check-grid cols-2">
+          <label class="check-item"><input type="checkbox" name="contactPreference" value="Email" /> Email</label>
+          <label class="check-item"><input type="checkbox" name="contactPreference" value="Fax" /> Fax</label>
+          <label class="check-item"><input type="checkbox" name="contactPreference" value="Mail" /> Mail</label>
+          <label class="check-item"><input type="checkbox" name="contactPreference" value="Phone" /> Phone</label>
+        </div>
+      </div>
+
+      <label class="privacy-row">
+        <input type="checkbox" name="privacyPolicy" value="true" required />
+        <span>By completing this form you accept the processing of your personal data. The information provided will be processed within the guidelines of the <a href="privacy.html" target="_blank">privacy policy</a> to provide the services requested.</span>
+      </label>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
   </div>
 </section>
 
@@ -127,7 +196,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <a href="index.html" class="footer-brand"><img class="footer-logo" src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></a>
-        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, NJ, and DE.</p>
+        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, and NJ.</p>
       </div>
       <div class="footer-col">
         <h4>Solutions</h4>

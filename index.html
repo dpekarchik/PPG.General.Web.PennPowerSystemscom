@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="EGSA-certified power generation: Blue Star generators, rentals, 24/7 emergency service and maintenance across PA, NY, NJ and DE." />
+<meta name="description" content="EGSA-certified power generation: Blue Star generators, rentals, 24/7 emergency service and maintenance across PA, NY and NJ." />
 <title>Power Generation Specialists | Penn Power Systems</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
       </a>
       <span class="location-info">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-        5 service centers · PA, NY, NJ, DE
+        5 service centers · PA, NY, NJ
       </span>
     </div>
     <div class="util-right">
@@ -66,7 +66,7 @@
           EGSA-certified · 24/7 emergency response
         </div>
         <h1>Power you can <span class="accent">count on</span>.<br>When you need it most.</h1>
-        <p>Cutting-edge power generation solutions backed by factory-trained technicians. From rental fleets to permanent installations, we keep critical operations running across PA, NY, NJ, and DE.</p>
+        <p>Cutting-edge power generation solutions backed by factory-trained technicians. From rental fleets to permanent installations, we keep critical operations running across PA, NY, and NJ.</p>
         <div class="hero-actions">
           <a href="#solutions" class="btn btn-large btn-brand">
             Explore power solutions
@@ -186,7 +186,7 @@
     </div>
     <div class="showcase-grid">
       <a href="rentals.html" class="showcase-item">
-        <img src="assets/images/carousel-1.jpg" alt="120 kW towable Penn Power Systems rental generator on a trailer">
+        <img src="assets/images/banner1.jpg" alt="120 kW towable Penn Power Systems rental generator on a trailer">
         <div class="showcase-caption"><div class="t">Mobile rental fleet</div><div class="s">Same-day, towable, 25 kW&ndash;1 MW</div></div>
       </a>
       <a href="solutions.html#blue-star" class="showcase-item">
@@ -405,7 +405,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <a href="index.html" class="footer-brand"><img class="footer-logo" src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></a>
-        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, NJ, and DE.</p>
+        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, and NJ.</p>
       </div>
       <div class="footer-col">
         <h4>Solutions</h4>
@@ -454,6 +454,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('[data-year]').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+  function ppsSubmit(e){
+    e.preventDefault();
+    var f = e.target;
+    f.innerHTML = '<div class="form-success"><strong>Thanks \u2014 your request was received.</strong><br>' +
+      'A Penn Power Systems team member will reach out shortly. For urgent needs, call ' +
+      '<a href="tel:18777367697" style="color:inherit;text-decoration:underline;">1-877-PEN-POWR</a>.</div>';
+  }
+</script>
 
 </body>
 </html>

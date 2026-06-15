@@ -22,7 +22,7 @@
       </a>
       <span class="location-info">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-        5 service centers · PA, NY, NJ, DE
+        5 service centers · PA, NY, NJ
       </span>
     </div>
     <div class="util-right">
@@ -291,7 +291,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <a href="index.html" class="footer-brand"><img class="footer-logo" src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></a>
-        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, NJ, and DE.</p>
+        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, and NJ.</p>
       </div>
       <div class="footer-col">
         <h4>Solutions</h4>
@@ -340,6 +340,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('[data-year]').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+  function ppsSubmit(e){
+    e.preventDefault();
+    var f = e.target;
+    f.innerHTML = '<div class="form-success"><strong>Thanks \u2014 your request was received.</strong><br>' +
+      'A Penn Power Systems team member will reach out shortly. For urgent needs, call ' +
+      '<a href="tel:18777367697" style="color:inherit;text-decoration:underline;">1-877-PEN-POWR</a>.</div>';
+  }
+</script>
 
 </body>
 </html>
