@@ -3,21 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Services | Penn Power Systems — Redesign Mockup</title>
+<meta name="description" content="Emergency response, preventive maintenance, loadbank testing, fuel polishing, remote monitoring and parts from factory-trained, EGSA-certified technicians." />
+<title>Power Generator Services | Penn Power Systems</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- MOCKUP NOTICE -->
-<div class="mockup-notice">
-  <div class="container">
-    <span><strong>Redesign mockup</strong> — non-production, content reused from current pennpowersystems.com for context</span>
-    <span class="version">v0.3 · services</span>
-  </div>
-</div>
 
 <!-- UTILITY BAR -->
 <div class="util-bar">
@@ -33,33 +26,29 @@
       </span>
     </div>
     <div class="util-right">
-      <a href="#" class="credit-link">Credit application</a>
-      <a href="#" class="portal-link">Customer portal</a>
-      <a href="#contact" class="emergency-link">Emergency 24/7 →</a>
+      <a href="credit-application.html" class="credit-link">Credit application</a>
+      <a href="portal.html" class="portal-link">Customer portal</a>
+      <a href="contact.html" class="emergency-link">Emergency 24/7 &rarr;</a>
     </div>
   </div>
 </div>
 
-<!-- HEADER -->
+<!-- HEADER / NAV -->
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand-mark">
-      <div class="brand-logo">P</div>
-      <div>
-        <div class="brand-name">Penn Power Systems</div>
-        <div class="brand-tag">Power Generation Specialists</div>
-      </div>
+    <a href="index.html" class="brand-mark" aria-label="Penn Power Systems home">
+      <span class="brand-plate"><img src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></span>
     </a>
     <nav class="main-nav">
-      <a href="index.html#solutions" class="nav-link">Power solutions</a>
+      <a href="solutions.html" class="nav-link">Power solutions</a>
       <a href="services.html" class="nav-link active">Services</a>
       <a href="partners.html" class="nav-link">Partners</a>
       <a href="locations.html" class="nav-link">Locations</a>
-      <a href="#" class="nav-link">About us</a>
+      <a href="about.html" class="nav-link">About us</a>
     </nav>
     <div class="header-actions">
-      <a href="#" class="rent-link">Rent a generator</a>
-      <a href="#contact" class="btn btn-primary">
+      <a href="rentals.html" class="rent-link">Rent a generator</a>
+      <a href="contact.html" class="btn btn-primary">
         Request service
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
       </a>
@@ -70,13 +59,18 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
+    <div class="page-hero-grid">
+      <div>
     <nav class="breadcrumb">
       <a href="index.html">Home</a>
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
       <span class="current">Services</span>
     </nav>
-    <h1>Power generator services that keep critical operations running.</h1>
-    <p class="lead">Penn Power Systems provides comprehensive power generator services. Our factory-trained experts deliver reliable, customized solutions to a wide range of industries — ensuring your systems are always operational, efficient, and ready.</p>
+        <h1>Power generator services that keep critical operations running.</h1>
+        <p class="lead">Penn Power Systems provides comprehensive power generator services. Our factory-trained experts deliver reliable, customized solutions to a wide range of industries &mdash; ensuring your systems are always operational, efficient, and ready.</p>
+      </div>
+      <div class="page-hero-media"><img src="assets/images/services_pennsystem.jpg" alt="Penn Power Systems service trucks, a 600 kW unit and a technician at work"></div>
+    </div>
   </div>
 </section>
 
@@ -235,17 +229,17 @@
       <h2 class="section-heading" style="font-size: 28px;">Specialized capabilities.</h2>
     </div>
     <div class="grid-cards cols-3" style="margin-top: 32px;">
-      <a href="#" class="solution-card">
+      <a href="contact.html" class="solution-card">
         <div class="solution-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
         <h3>Fire pump maintenance</h3>
         <p>NFPA 25-compliant fire pump inspection, testing, and service.</p>
       </a>
-      <a href="#" class="solution-card">
+      <a href="contact.html" class="solution-card">
         <div class="solution-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M19.428 15.428V20a2 2 0 01-2 2H6.572a2 2 0 01-2-2v-4.572m14.856 0l-1.857-7.428A2 2 0 0015.643 6.5H8.357a2 2 0 00-1.928 1.5L4.572 15.428" /></svg></div>
         <h3>Oil & coolant sampling</h3>
         <p>Lab analysis to detect engine wear and contamination early.</p>
       </a>
-      <a href="#" class="solution-card">
+      <a href="contact.html" class="solution-card">
         <div class="solution-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
         <h3>Ancillary items</h3>
         <p>Switchgear, transfer switches, paralleling equipment, and rental.</p>
@@ -269,7 +263,7 @@
             1-877-PEN-POWR
           </a>
         </div>
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mockup form — not submitted.');">
+        <form class="contact-form" onsubmit="ppsSubmit(event)">
           <input placeholder="Your name" />
           <input placeholder="Company" />
           <input placeholder="Email or phone" />
@@ -291,23 +285,21 @@
 </section>
 
 <!-- FOOTER -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col footer-about">
-        <div class="brand-mark">
-          <div class="brand-logo" style="background: var(--brand-600);">P</div>
-          <div class="brand-name" style="color: #fff;">Penn Power Systems</div>
-        </div>
-        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call.</p>
+        <a href="index.html" class="footer-brand"><img class="footer-logo" src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></a>
+        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, NJ, and DE.</p>
       </div>
       <div class="footer-col">
         <h4>Solutions</h4>
         <ul>
-          <li><a href="index.html#solutions">Blue Star generators</a></li>
-          <li><a href="index.html#solutions">Equipment & accessories</a></li>
-          <li><a href="index.html#solutions">Generator leasing</a></li>
-          <li><a href="index.html#solutions">Rentals</a></li>
+          <li><a href="solutions.html#blue-star">Blue Star generators</a></li>
+          <li><a href="solutions.html#equipment">Equipment &amp; accessories</a></li>
+          <li><a href="solutions.html#leasing">Generator leasing</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -322,28 +314,28 @@
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About us</a></li>
+          <li><a href="about.html">About us</a></li>
           <li><a href="partners.html">Partners</a></li>
           <li><a href="locations.html">Locations</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="careers.html">Careers</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:18777367697">1-877-PEN-POWR</a></li>
-          <li>Philadelphia, PA 19136</li>
-          <li><a href="#">Credit application</a></li>
-          <li><a href="#">Customer portal</a></li>
+          <li><a href="locations.html#philadelphia">Philadelphia, PA 19136</a></li>
+          <li><a href="credit-application.html">Credit application</a></li>
+          <li><a href="portal.html">Customer portal</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© Penn Power Systems · Redesign mockup (non-production)</div>
+      <div>&copy; <span data-year>2026</span> Penn Power Systems. All rights reserved.</div>
       <div class="footer-bottom-links">
-        <a href="#">Privacy</a>
-        <a href="#">Cookies</a>
-        <a href="#">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="terms.html">Terms</a>
       </div>
     </div>
   </div>

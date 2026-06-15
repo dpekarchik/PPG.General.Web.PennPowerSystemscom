@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Sign in to the Penn Power Systems customer portal for invoices, service history and live equipment monitoring." />
+<title>Customer Portal | Penn Power Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="util-bar">
+  <div class="container">
+    <div class="util-left">
+      <a href="tel:18777367697" class="icon-link">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.792a2 2 0 01-.55 1.946L8.21 10.71a11.05 11.05 0 005.08 5.08l1.457-1.16a2 2 0 011.946-.55l2.792.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        1-877-PEN-POWR
+      </a>
+      <span class="location-info">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        5 service centers · PA, NY, NJ, DE
+      </span>
+    </div>
+    <div class="util-right">
+      <a href="credit-application.html" class="credit-link">Credit application</a>
+      <a href="portal.html" class="portal-link">Customer portal</a>
+      <a href="contact.html" class="emergency-link">Emergency 24/7 &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER / NAV -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand-mark" aria-label="Penn Power Systems home">
+      <span class="brand-plate"><img src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></span>
+    </a>
+    <nav class="main-nav">
+      <a href="solutions.html" class="nav-link">Power solutions</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="partners.html" class="nav-link">Partners</a>
+      <a href="locations.html" class="nav-link">Locations</a>
+      <a href="about.html" class="nav-link">About us</a>
+    </nav>
+    <div class="header-actions">
+      <a href="rentals.html" class="rent-link">Rent a generator</a>
+      <a href="contact.html" class="btn btn-primary">
+        Request service
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+      <span class="current">Customer portal</span>
+    </nav>
+    <h1>Customer portal.</h1>
+    <p class="lead">Sign in to view invoices, service history, scheduled maintenance, and live monitoring for your equipment.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="form-card narrow">
+      <form onsubmit="ppsSubmit(event)">
+        <div class="field"><label>Email</label><input type="email" placeholder="you@company.com" required></div>
+        <div class="field"><label>Password</label><input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required></div>
+        <button type="submit" class="btn-submit" style="width:100%;">Sign in</button>
+      </form>
+      <p class="auth-note">Forgot your password? <a href="contact.html">Reset it</a></p>
+      <p class="auth-note">Don't have an account yet? <a href="contact.html">Request access</a></p>
+    </div>
+
+    <div style="max-width:760px;margin:48px auto 0;">
+      <div class="eyebrow" style="text-align:center;">What's inside</div>
+      <div class="portal-tiles">
+        <div class="solution-card" style="cursor:default;text-align:center;">
+          <h3>Invoices &amp; statements</h3><p>Download and pay online.</p>
+        </div>
+        <div class="solution-card" style="cursor:default;text-align:center;">
+          <h3>Service history</h3><p>Every visit, part, and report.</p>
+        </div>
+        <div class="solution-card" style="cursor:default;text-align:center;">
+          <h3>Live monitoring</h3><p>Omnimetrix status at a glance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <a href="index.html" class="footer-brand"><img class="footer-logo" src="assets/images/PPS-Logo-White.png" alt="Penn Power Systems"></a>
+        <p>Cutting-edge power generation solutions for industries that can't afford downtime. EGSA-certified. Factory-trained. Always on call across PA, NY, NJ, and DE.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="solutions.html#blue-star">Blue Star generators</a></li>
+          <li><a href="solutions.html#equipment">Equipment &amp; accessories</a></li>
+          <li><a href="solutions.html#leasing">Generator leasing</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#emergency">Emergency response</a></li>
+          <li><a href="services.html#preventive">Preventive maintenance</a></li>
+          <li><a href="services.html#loadbank">Loadbank testing</a></li>
+          <li><a href="services.html#monitoring">Remote monitoring</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:18777367697">1-877-PEN-POWR</a></li>
+          <li><a href="locations.html#philadelphia">Philadelphia, PA 19136</a></li>
+          <li><a href="credit-application.html">Credit application</a></li>
+          <li><a href="portal.html">Customer portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span data-year>2026</span> Penn Power Systems. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-year]').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+  function ppsSubmit(e){
+    e.preventDefault();
+    var f = e.target;
+    f.innerHTML = '<div class="form-success"><strong>Thanks \u2014 your request was received.</strong><br>' +
+      'A Penn Power Systems team member will reach out shortly. For urgent needs, call ' +
+      '<a href="tel:18777367697" style="color:inherit;text-decoration:underline;">1-877-PEN-POWR</a>.</div>';
+  }
+</script>
+
+</body>
+</html>
