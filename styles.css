@@ -997,6 +997,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 @media (min-width: 640px) { .locations-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .locations-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1024px) { .locations-grid.five { grid-template-columns: repeat(5, 1fr); } }
 
 .location-card {
   background: rgba(255, 255, 255, 0.05);
@@ -1183,10 +1184,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   display: flex;
   align-items: center;
 }
-.brand-plate img { height: 24px; width: auto; display: block; }
+.brand-plate img { height: 38px; width: auto; display: block; }
 .footer-brand { display: inline-flex; }
 .footer-logo { height: 30px; width: auto; display: block; }
-@media (min-width: 480px) { .brand-plate img { height: 26px; } }
+@media (min-width: 480px) { .brand-plate img { height: 44px; } }
 
 /* --- Generic media frame (rounded photo) --- */
 .media-frame {
